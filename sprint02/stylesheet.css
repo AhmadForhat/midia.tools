@@ -85,6 +85,10 @@ button:hover{
     cursor: pointer;
 }
 
+#homeIntroducao{
+    margin-top:110px;
+    display:flex;
+}
 #homeEspacamento{
     background-image: url("./imagens/background_home.png");
     height: 350px;
@@ -103,4 +107,17 @@ button:hover{
 
 #homeEspacamento button{
     margin-top: 2%
+}
+
+#homeServicos .homeServicosOpcoes{
+    display:flex;
+}
+
+#homeContato{
+    display:flex;
+    width: 100%;
+}
+
+#homeContato iframe{
+    width: 950px;
 }
