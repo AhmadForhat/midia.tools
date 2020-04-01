@@ -84,3 +84,23 @@ button:hover{
     color: #FFACBE;
     cursor: pointer;
 }
+
+#homeEspacamento{
+    background-image: url("./imagens/background_home.png");
+    height: 350px;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+#homeEspacamento h2{
+    max-width: 750px;
+    margin-left: 26%;
+    margin-top: 6%
+}
+
+#homeEspacamento button{
+    margin-top: 2%
+}
