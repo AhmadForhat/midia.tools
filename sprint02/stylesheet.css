@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: 'Roboto', sans-serif;
     background-color: #FDF5FF;
+    width: 100%;
 }
 
 h1{
@@ -89,6 +90,18 @@ button:hover{
     margin-top:110px;
     display:flex;
 }
+
+.logo{
+    text-align: center;
+    margin-left:3%;
+    margin-right:4%;
+}
+
+.introducao{
+    margin-top:3%;
+    max-width: 65%;
+}
+
 #homeEspacamento{
     background-image: url("./imagens/background_home.png");
     height: 350px;
@@ -97,6 +110,8 @@ button:hover{
     flex-direction: column;
     text-align: center;
     align-items: center;
+    margin-top:2%;
+    margin-bottom: 4%;
 }
 
 #homeEspacamento h2{
@@ -109,15 +124,80 @@ button:hover{
     margin-top: 2%
 }
 
+#homeServicos{
+    width: 100%;
+    margin-bottom:3%;
+}
+
+#homeServicos h2{
+    margin-left: 3%;
+}
+
+.bloquinhos{
+    text-align: center;
+}
+
+.bloquinhos p{
+    max-width: 70%;
+    text-align: center;
+    margin-left:12%;
+}
+
 #homeServicos .homeServicosOpcoes{
     display:flex;
 }
 
 #homeContato{
     display:flex;
-    width: 100%;
+    margin-left:3%;
+}
+
+.contatinho{
+    margin-left:3%;
 }
 
 #homeContato iframe{
     width: 950px;
+    height: 305px;
+    margin-top:5%;
 }
+
+.informacoesContato{
+    display:flex;
+    justify-content: space-between;
+    margin-top:1%;
+}
+
+.logoRedes{
+    margin-top: 2%;
+    display:flex;
+    width: 220px;
+    justify-content: space-between;
+}
+
+.homeContatoMapa{
+    margin-top:1%;
+    margin-left:3%;
+}
+
+.homeContatoImagem{
+    text-align: center;
+}
+
+footer{
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    margin-top:3%;
+}
+
+footer p{
+    color:white;
+}
+
+@media only screen and (max-width: 1450px) {
+    body {
+      background-color: lightblue;
+    }
+  }
