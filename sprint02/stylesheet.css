@@ -32,6 +32,11 @@ p{
     font-family: 'Roboto', sans-serif;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 #navHome {
     display:flex;
     justify-content: space-around;
@@ -301,7 +306,7 @@ button:hover{
     align-items: center;
     justify-content: center;
     margin-top: 80px; 
-    margin-right: 50px;   
+    margin-right: 50px;
 }
 
 .formulario h3{
@@ -323,7 +328,7 @@ button:hover{
     margin-top: 20px;
 }
 
-.formulario input{
+.formulario input, select{
     background-color: #AA60DC;
     height: 40px;
     width: 450px;
@@ -402,6 +407,123 @@ footer p{
     color:white;      
 }
 
+/* inicio - estilos para dashboard*/
+
+.dashContainer {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.menuLateral {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    background-color: #AA60DC;
+    text-align: center;
+    align-items: center;
+    opacity: 90%;
+    font-size: 22px;
+    overflow: hidden;
+    height: 100pc;
+}
+
+.menuLateral .logos a{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.menuLateral .perfil img {
+    padding: 3rem 3rem 0 3rem;
+    max-width: 200px;
+}
+
+.menuOpcao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.menuOpcao a {
+    padding: 1rem 0.5rem;
+    text-decoration: none;
+    color: white;
+}
+
+.menuOpcao a:hover {
+    background-color: white;
+    color: #AA60DC;
+}
+
+.dashboard {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+}
+.dashboard form, .dashboard .formulario {
+    margin-top: 10px; 
+    margin-right: 0px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard .formulario input, .dashboard .formulario select, .dashboard .formulario .barraParametros h3{
+    height: 2rem;
+    width: 200px;
+    font-size: 1.25rem;
+    margin: 0.25rem;
+}
+
+.barraParametros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.seletorParametros {
+    max-width: 100%;
+}
+
+.seletorMetricas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.seletorMetricas .check {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #AA60DC;
+    border-radius: 1rem;
+}
+
+.seletorMetricas input[type="checkbox"] {
+    height: 1rem;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+.seletorMetricas label {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin-top: 0.25rem;
+}
+
+.grafico {
+    margin: 2rem auto;
+}
+
+/* fim - estilos para dashboard*/
 
 @media only screen and (max-width: 900px) {
 /* Configuracoes formularios*/
@@ -456,7 +578,7 @@ h3 {
     width: 100%;            
 }
 
-.formulario input{
+.formulario input, label{
     background-color: #D77389;
     height: 35px;
     width: 300px;    
