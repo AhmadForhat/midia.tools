@@ -2,8 +2,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #FDF5FF;
-    width: 100%;
+    background-color: #EAE1E1;
+    height: 100vh;
+    width: 100vw;            
 }
 
 h1{
@@ -31,7 +32,7 @@ p{
     font-family: 'Roboto', sans-serif;
 }
 
-nav {
+#navHome {
     display:flex;
     justify-content: space-around;
     text-align: center;
@@ -47,11 +48,61 @@ nav {
     z-index: 200;
 }
 
+
 .ancoraTitulo{
     font-size: 32px;
     font-weight: bold;
     color: white;
     margin-right:30%;
+}
+
+#navHome a{
+    text-decoration: none;
+    color: white;
+}
+
+#navHome a:hover{
+    color:#FFACBE;
+    font-weight: bold;
+}
+
+#navHome .active{
+    color:#FFACBE;
+    font-weight: bold;
+}
+
+header{
+    height: 70px;
+    background-color: #AA60DC;
+    opacity: 90%;
+    font-size: 22px; 
+    display: flex; 
+    overflow: hidden;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    z-index: 200;    
+}
+
+header .logo-content {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10px;
+  }
+
+header .logo-content img {
+    width: 70px;
+  }
+  
+nav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 nav a{
@@ -184,20 +235,290 @@ button:hover{
     text-align: center;
 }
 
+/* Configuracoes formularios*/
+/* Botão Google */
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;       
+}
+
+#logoLoginCadastro{
+    display:none;
+}
+
+.google-btn {
+    width: 210px;
+    height: 42px;
+    background-color: #4285f4;
+    border-radius: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+}
+.google-icon-wrapper {
+      position: absolute;
+      margin-top: 1px;
+      margin-left: 1px;
+      width: 40px;
+      height: 40px;
+      border-radius: 2px;
+      background-color: #fff;
+}
+.google-icon {
+      position: absolute;
+      margin-top: 11px;
+      margin-left: 11px;
+      width: 18px;
+      height: 18px;
+}
+.btn-text {
+      float: right;
+      margin: 11px 11px 0 0;
+      color: #fff;
+      font-size: 14px;
+      letter-spacing: 0.2px;
+      font-family: "Roboto";
+}
+.google-btn:hover {
+      box-shadow: 0 0 6px #4285f4;
+}
+.google-btn:active {
+      background: #1669F2;
+}
+
+.loginCadastro {    
+    display: flex;      
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;                  
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;      
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px; 
+    margin-right: 50px;   
+}
+
+.formulario h3{
+    text-align: center;
+    margin: 10px;
+}
+
+.formulario form{   
+    display: flex;
+    flex-direction: column;    
+}
+
+.formulario a{
+    text-decoration: none;
+    font-size:18px;
+    color:#534145;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.formulario input{
+    background-color: #AA60DC;
+    height: 40px;
+    width: 450px;
+    border: none;
+    border-radius:30px;
+    color:white;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center; 
+    margin-top: 10px;
+    margin-bottom: 5px;    
+}
+
+::-webkit-input-placeholder {
+	color: white;
+}
+
+.formulario button {
+    align-self: center;
+    background-color: #AA60DC;
+    height: 40px;
+    width: 200px;
+    margin-top: 10px;
+    border: none;
+    border-radius:30px;
+    color:white;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.logos a{
+    margin: 0;
+}
+
+.logos a img{
+    width: 50px;    
+}
+
+.logos a img:hover{
+    box-shadow: 0 0 6px #4285f4;    
+}
+
+
+#ilustracaoLogin img{
+    width: 330px;    
+    margin-top: 80px;
+}
+
+#ilustracaoCadastro img{
+    width: 450px;    
+}
+
+/* Acaba formulário */
+
+
 footer{
     height: 60px;
     width: 100%;
+    max-width: 100vw;    
     text-align: center;
     background-color: black;
-    margin-top:3%;
+    margin-top:3%; 
+    display: flex;     
+    justify-content: center;
+    align-content: center;
 }
 
 footer p{
-    color:white;
+    color:white;      
 }
 
-@media only screen and (max-width: 1450px) {
-    body {
-      background-color: lightblue;
-    }
-  }
+
+@media only screen and (max-width: 900px) {
+/* Configuracoes formularios*/
+/* Botão Google */
+header{
+    display:none;
+    margin: 0;
+    padding: 0;
+}
+
+body {    
+    background-color: #FBEDFF;    
+}
+
+h1{   
+    color: #11023C;    
+}
+
+h2 {    
+    color: #11023C;    
+}
+
+h3 {    
+    color: #11023C;
+}
+
+
+#logoLoginCadastro{
+    display: block;
+    width: 114px;
+    margin-bottom: 20px;
+}
+
+.loginCadastro {   
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;    
+}
+
+.formulario{       
+    width: 100%;
+    margin-top: 2px; 
+    margin-right: 0;            
+}
+
+.formulario h3{    
+    margin: 10px;
+}
+
+.formulario form{    
+    width: 100%;            
+}
+
+.formulario input{
+    background-color: #D77389;
+    height: 35px;
+    width: 300px;    
+    color:#11023C;
+    font-size: 22px;    
+    align-self: center; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 80%;              
+}
+
+::-webkit-input-placeholder {
+	color: #11023C;
+}
+
+.formulario button {    
+    background-color: #D77389;
+    height: 35px;
+    width: 200px;
+    margin-top: 10px;   
+    color:#11023C;
+    font-size: 22px;    
+}
+
+.formulario button:hover{    
+    color: #FFACBE;    
+}
+
+.logos {
+    display: flex;
+    justify-content: center;        
+}
+
+.logos a{
+    margin-right: 20px;
+    margin-left: 20px;    
+}
+
+.logos a img{    
+    width: 40px;    
+}
+
+#ilustracaoLogin img{
+    display:none;
+}
+
+#ilustracaoCadastro img{
+    display: none;
+}
+
+#logoLoginCadastro{
+    width: 114px;
+    margin-bottom: 20px;
+}
+
+#pergunta{
+    margin-bottom: 20px;
+}
+/* Acaba formulário */
+
+footer{
+    display: none;
+}
+
+}
