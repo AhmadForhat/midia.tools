@@ -428,7 +428,7 @@ footer p{
     height: 100pc;
 }
 
-.menuLateral .logos a{
+.menuLateral .logos a {
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -436,6 +436,11 @@ footer p{
 .menuLateral .perfil img {
     padding: 3rem 3rem 0 3rem;
     max-width: 200px;
+}
+
+.menuLateral .menuOpcao img {
+    max-width: 30px;
+    padding: 0 1rem;
 }
 
 .menuOpcao {
