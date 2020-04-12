@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="containner">
+        <div id="menuLateral">
+            <!-- começa o nav -->
+                <div id="perfil">
+                    <img src="\imagens\home_equipe.png" alt="Foto Perfil">
+                    <p>Nome do meu Perfil</p>
+                </div>
+                <div id="midiasContainner">
+                    <ul>
+                        <li><a href="https://www.facebook.com/" target="_blank"><img src="./imagens/insta.png" alt="logo instagram"></a></li>
+                        <li><a href="https://www.twittter.com/" target="_blank"><img src="./imagens/face.png" alt="logo facebook"></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank"><img src="./imagens/face.png" alt="logo facebook"></a></li>
+                    </ul>
+                </div>
+                <div id="MenuDeOpcao">
+                    <ul>
+                        <li><a href="#" target="_blank"><img src="" alt="icone">Métricas</a></li>
+                        <li><a href="#" target="_blank"><img src="" alt="icone">Agendar Publicação</a></li>
+                        <li><a href="#" target="_blank"><img src="" alt="icone">Calendário</a></li>
+                        <li><a href="#" target="_blank"><img src="" alt="icone">Configurações</a></li>
+                    </ul>
+                </div>
+                <!-- termina o nav -->
+        </div>
+        <div id="conteudo">
+            <form action="">
+                <div class="barraParametros">
+                    <div id="seletorParametro">
+                        <h3>Rede Social</h3>
+                        <select id="social" name="social">
+                            <option value="facebook">Facebook</option>
+                            <option value="twitter">Twitter</option>
+                            <option value="instagram">Instagram</option>
+                        </select>
+                    </div>
+                    <div id="seletorParametro">
+                        <h3>Data Inicio</h3>
+                        <input type="date" id="dataInicio" name="dataInicio">
+                    </div>
+                    <div id="seletorParametro">
+                        <h3>Data Inicio</h3>
+                        <input type="date" id="dataFim" name="dataFim">
+                    </div>
+                </div>
+                <div class="seletorDeMetricas">
+                    <input type="checkbox" id="seguidores" name="seguidores" value="seguidores">
+                    <label for="seguidores">Seguidores</label><br>
+                    <input type="checkbox" id="seguindo" name="seguindo" value="seguindo">
+                    <label for="seguindo">Seguindo</label><br>
+                    <input type="checkbox" id="alcance" name="alcance" value="alcance">
+                    <label for="alcance">Alcance das Publicações</label><br>
+                    <input type="checkbox" id="topPosts" name="topPosts" value="topPosts">
+                    <label for="alcance">Top Posts</label><br>
+                    <input type="checkbox" id="melhorDataHora" name="melhorDataHora" value="melhorDataHora">
+                    <label for="alcance">Melhor data/hora</label><br>
+                </div>
+            </form>
+            <div class="grafico">
+                <iframe src="" frameborder="0">
+                    <img src="simple_chart.png" alt="Aqui vai o gráfico">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
