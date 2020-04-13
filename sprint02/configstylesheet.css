@@ -1,147 +1,123 @@
-.container{
-    font-family: 'Righteous', cursive;
-    font-size: 16px;
+.configContainer {
     display: flex;
-    width: 100%;
-    height: 100%;
-
+    height: 100vh;
+    overflow: hidden;
 }
-.sidebar{
+
+.menuLateral {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
     background-color: #AA60DC;
-    margin: 0;
-    padding: 0;
-    width: 300px;
-    position: fixed;
-    height: 100%;
-    overflow: auto;
+    text-align: center;
+    align-items: center;
+    opacity: 90%;
+    font-size: 22px;
+    overflow: hidden;
+    height: 100pc;
 }
 
-.sidebar *{
-    display: block;
-    color: black;
-    padding: 16px;
+.menuLateral .logos a {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.menuLateral .perfil img {
+    padding: 3rem 3rem 0 3rem;
+    max-width: 200px;
+}
+
+.menuLateral .menuOpcao img {
+    max-width: 30px;
+    padding: 0 1rem;
+}
+
+.menuOpcao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.menuOpcao a {
+    padding: 1rem 0.5rem;
     text-decoration: none;
-
+    color: white;
 }
 
-.sidebar #logo{
-    width: 50px;
-    height: 50px;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-
-.sidebar #perfil img{
-    width: 150px;
-    height: 150px;
+.menuOpcao a:hover {
     background-color: white;
-    background-size: cover;
-    border-radius: 80px;
-    text-align: center;
-    position: relative;
-    top: 75px;
-    left: 45px;
-
-}
-
-.sidebar #perfil h5{
-    position: relative;
-    margin-top: 75px;
-    text-align: center;
-}
-
-
-.sidebar #redes{
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    background-size: contain;
+    color: #AA60DC;
 }
 
 .paginaConfiguracoes{
-    width: 100%;
-    height: 100%;
-    display: block;
-    margin: auto 350px;
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin-left: 5%;
 }
 
 .paginaConfiguracoes form{
-    width: 50%;
-    border: none;
-    margin: auto 100px;
-    padding: 10px;
     display: flex;
-    position: relative;
-    flex-direction: column;      
-    justify-content: center;
-    margin-top: 80px; 
+    flex-direction: column;  
+    width: 50vw;
+    height: 50vh;
+    margin: 7% 10%;
+    max-width: 1000px;
 }
 
-.paginaConfiguracoes form * {
-    line-height: 24px;
-    padding: 15px 15px 10px;
+.paginaConfiguracoes form *{
+    font-size: 18px;
     font-family: 'Righteous', cursive;
+    padding: 15px 0 10px;
+    /* font-family: 'Roboto', sans-serif; */
 }
 
-form input{
-    width: 90%;
-    height: 26px;
-    border: 1px solid purple;
-    border-radius: 30px;
-    padding: 20px;
+.paginaConfiguracoes form input {
+    background-color: #AA60DC;
+    line-height: 20px;
+    border: none;
+    border-radius:30px;
+    color:white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    text-indent: 25px;
 }
 
-form button{
-    margin: 10px;
-    border-radius: 30px;
+.paginaConfiguracoes form button{
+    margin-top: 15px;
+    align-self: flex-end;
 }
 
-
-.paginaConfiguracoes #contato{
+#configContato {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    justify-content: space-around;
+    width: 50vw;
+    height: 50vh;
 }
 
-.paginaConfiguracoes .contatoImagem{
-    width: 40vw;
-    height: 100vh;
+#configContato .contatoImagem {
+    width: 50vw;
+    height: 50vh;
+    text-align: center;
 }
 
-.paginaConfiguracoes .contatoMapa{
-    width: 60vw;
-    height: 100vh;
-    margin-top: 100px;
+#configContato .contatoMapa {
+    width: 50vw;
+    height: 50vh;
 }
 
-.paginaConfiguracoes .logoContatoSocial{
-    display: flex;
-    position: relative;
-    bottom: 0;
-    margin: auto;
-    width: 100px;
-    height: 100px;
-    padding: 5px;
+#configContato .contatoMapa iframe{
+    width: 50vw;
+    height: 20vh;
+    max-width: 950px;
 }
 
-
-@media screen and (max-width: 700px) {
-    .sidebar {
-      width: 100%;
-      height: auto;
-      position: relative;
-    }
-    .sidebar a {float: left;}
-    div.content {margin-left: 0;}
-  }
-  
-  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-  @media screen and (max-width: 400px) {
-    .sidebar a {
-      text-align: center;
-      float: none;
-    }
-  }
+#configContato .logoRedes{
+    margin-top: 2%;
+    display:flex;
+    width: 10%;
+    max-width: 220px;
+    justify-content: space-between;
+}
