@@ -1,0 +1,147 @@
+.container{
+    font-family: 'Righteous', cursive;
+    font-size: 16px;
+    display: flex;
+    width: 100%;
+    height: 100%;
+
+}
+.sidebar{
+    background-color: #AA60DC;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar *{
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+
+}
+
+.sidebar #logo{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+
+.sidebar #perfil img{
+    width: 150px;
+    height: 150px;
+    background-color: white;
+    background-size: cover;
+    border-radius: 80px;
+    text-align: center;
+    position: relative;
+    top: 75px;
+    left: 45px;
+
+}
+
+.sidebar #perfil h5{
+    position: relative;
+    margin-top: 75px;
+    text-align: center;
+}
+
+
+.sidebar #redes{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+}
+
+.paginaConfiguracoes{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: auto 350px;
+}
+
+.paginaConfiguracoes form{
+    width: 50%;
+    border: none;
+    margin: auto 100px;
+    padding: 10px;
+    display: flex;
+    position: relative;
+    flex-direction: column;      
+    justify-content: center;
+    margin-top: 80px; 
+}
+
+.paginaConfiguracoes form * {
+    line-height: 24px;
+    padding: 15px 15px 10px;
+    font-family: 'Righteous', cursive;
+}
+
+form input{
+    width: 90%;
+    height: 26px;
+    border: 1px solid purple;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+form button{
+    margin: 10px;
+    border-radius: 30px;
+}
+
+
+.paginaConfiguracoes #contato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.paginaConfiguracoes .contatoImagem{
+    width: 40vw;
+    height: 100vh;
+}
+
+.paginaConfiguracoes .contatoMapa{
+    width: 60vw;
+    height: 100vh;
+    margin-top: 100px;
+}
+
+.paginaConfiguracoes .logoContatoSocial{
+    display: flex;
+    position: relative;
+    bottom: 0;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
+
+
+@media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
