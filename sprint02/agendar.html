@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="dashContainer">
+        <div class="iconeMidiaTools" onclick="toggleMenuLateral()">
+            <img src="./imagens/logo_home.png" alt="logo Mídia Tools">
+        </div>
+        <div class="menuLateral">
+            <!-- começa o nav -->
+                <div class="perfil">
+                    <img src="imagens/home_equipe.png" alt="Foto Perfil">
+                    <p>Nome do meu Perfil</p>
+                </div>
+                <div class="logos">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="./imagens/insta.png" alt="logo instagram"></a>
+                    <a href="https://www.twittter.com/" target="_blank"><img src="./imagens/twitter.png" alt="logo twitter"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./imagens/face.png" alt="logo facebook"></a>
+                </div>
+                <div class="menuOpcao">
+                    <a href="dashboard.html"><img src="imagens/icone_metricas.png" alt="icone">Métricas</a>
+                    <a href="agendar.html"><img src="imagens/icone_agendar.png" alt="icone">Agendar Publicação</a>
+                    <a href="calendario.html"><img src="imagens/icone_calendar.png" alt="icone">Calendário</a>
+                    <a href="configuracoes.html"><img src="imagens/icone_config.png" alt="icone">Configurações</a>
+                </div>
+                <!-- termina o nav -->
+        </div>
+        <main class="dashboard">
+            <div id="agendar" class="formulario">
+                <form>
+                    <label>Upload da Mídia</label>
+                    <input type="file"/>
+                    <label>Texto da Postagem</label>
+                    <input type="text"/>
+                    <label>Rede Social</label>
+                    <select id="social" name="social">
+                        <option value="facebook">Facebook</option>
+                        <option value="twitter">Twitter</option>
+                        <option value="instagram">Instagram</option>
+                    </select>
+                    <label>Data e horário da publicação</label>
+                    <input type="datetime-local"/>
+                    <button>Agendar</button>
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

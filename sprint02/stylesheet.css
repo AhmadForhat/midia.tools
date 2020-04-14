@@ -809,4 +809,110 @@ footer{
 
 }
 
+#agendar{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
+#agendar input{
+    align-self: center;
+    margin-top:2%;
+    width: 50%;
+    padding: 0.4%;
+    outline: none;
+}
+
+#agendar label{
+    margin-top:4%;
+    font-size: 22px;
+    font-family: 'Righteous', cursive;
+    color: #AD4B61;
+    cursor: pointer;
+}
+
+#agendar select{
+    margin-top:2%;
+    align-self: center;
+    width: 50%;
+    height: 10%;
+    padding: 0.6%;
+}
+
+#agendar button{
+    margin-top:8%;
+    align-self: center;
+    width: 25%;
+}
+
+#agendar input[type="datetime-local"] {
+    appearance: none;
+    -webkit-appearance: none;   
+    display: inline-block;
+    visibility: visible;
+}
+
+#agendar input[type="datetime-local"], focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+#agendar input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  #agendar input[type="file"]::before {
+    outline: none;
+    cursor: pointer;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    #agendar input[type="file"]{
+        text-align: center;
+        font-size: 12px;
+        align-self: center;
+        color:white;
+      }
+
+    #agendar input{
+        font-size:16px;
+        width: 80%;
+    }
+    #agendar section{
+        font-size:16px;
+        margin-top:8%;
+        width: 80%;
+    }
+    #agendar input[type="datetime-local"]{
+        color:white;
+        font-size:16px;
+        text-align: center;
+        width: 80%;
+    }
+    #agendar label{
+        margin-top:8%;
+        font-size: 20px;
+        font-family: 'Righteous', cursive;
+        color: #AD4B61;
+        cursor: pointer;
+        width: 80%;
+    }
+    #agendar button{
+        margin-top:16%;
+        font-size: 20px;
+        width: 80%;
+        font-family: 'Righteous', cursive;
+        color: white;
+        cursor: pointer;
+    }
+    #agendar button:hover{
+        color: #AD4B61;
+        cursor: pointer;
+    }
+  }
+
+
+}
