@@ -428,6 +428,18 @@ footer p{
     height: 100pc;
 }
 
+.iconeMidiaTools {
+    position: fixed;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.iconeMidiaTools img {
+    width: 75px;
+}
+
 .menuLateral .logos a {
     margin-left: 1rem;
     margin-right: 1rem;
@@ -648,4 +660,79 @@ footer{
     display: none;
 }
 
+/* inicio - estilos para dashboard mobile*/
+
+.menuLateral {
+    display: none;
+    width: 70%;
 }
+
+.dashboard {
+    margin-top: 10px;
+    width: 100pc;
+}
+
+.dashboard .formulario form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.barraParametros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding-left: 2rem;
+}
+
+.barraParametros label{
+    background-color: #AA60DC;
+}
+
+.seletorMetricas {
+    width: 50%;
+    padding-right: 2rem;
+}
+
+.seletorMetricas h3 {
+    font-size: 1rem;
+}
+
+.seletorMetricas label {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin-top: 0.25rem;
+    background-color: #AA60DC;
+    margin: 0px;
+}
+
+.dashboard .formulario input, .dashboard .formulario select, .dashboard .formulario .barraParametros h3{
+    height: 1.25rem;
+    width: 150px;
+    font-size: 1rem;
+    margin: 0.25rem;
+    
+}
+
+.dashboard .formulario .seletorMetricas input {
+    width: auto;
+    height: 1rem;
+}
+
+.dashboard .formulario .seletorMetricas label {
+    width: 100%;
+}
+
+.seletorMetricas .check {
+    padding: 0.5rem;
+}
+
+/* fim - estilos para dashboard mobile*/
+
+}
+
+
