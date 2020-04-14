@@ -539,7 +539,81 @@ header{
     padding: 0;
 }
 
-body {    
+#navHome{
+    display:flex;
+    justify-content: space-around;
+}
+
+.ancoraTitulo{
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-right:0%;
+}
+
+#homeIntroducao{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#homeEspacamento{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#homeEspacamento h2{
+    font-size:26px;
+    max-width: 90%;
+    margin:0 auto;
+    margin-top:25%;
+    margin-bottom:5%;
+}
+
+#homeServicos .homeServicosOpcoes{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#homeContato{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contatinho{
+    margin-left:0%;
+}
+
+#homeContato iframe{
+    width: 100%;
+    height: 300px;
+    margin:0 auto;
+    margin-top:5%;
+}
+
+.informacoesContato{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contatinho{
+    margin-left:5%;
+}
+
+body {     
     background-color: #FBEDFF;    
 }
 
