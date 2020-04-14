@@ -10,36 +10,38 @@
     </head>
 
     <body>
-        <div class="container">
-                <div class="sidebar">
-                    <img id="logo" src="./imagens/logo_home.png" alt="logo da empresa">
-                    <div id="perfil">
-                        <img src="" alt="Imagem do Usuário">
-                        <h5>Nome</h5>
+        <div class="configContainer">
+            <div class="menuLateral">
+                <!-- começa o nav -->
+                    <div class="perfil">
+                        <img src="imagens/home_equipe.png" alt="Foto Perfil">
+                        <p>Nome do meu Perfil</p>
                     </div>
-                    <div id="redes">
-                        <a href="https://www.instagram.com/" target="_blank"><img src="./imagens/face.png" alt="logo facebook"></a>
+                    <div class="logos">
                         <a href="https://www.facebook.com/" target="_blank"><img src="./imagens/insta.png" alt="logo instagram"></a>
-                        <a href="https://www.twitter.com/" target="_blank"><img src="./imagens/twitter.png" alt="logo twitter"></a>
+                        <a href="https://www.twittter.com/" target="_blank"><img src="./imagens/twitter.png" alt="logo twitter"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="./imagens/face.png" alt="logo facebook"></a>
                     </div>
-                        
-                    <a href="#"><img><h4>Métricas</h4>></a>
-                    <a href="#"><img><h4>Agendar Publicação</h4>></a>
-                    <a href="#"><img><h4>Calendário</h4>></a>
-                    <a href="#"><img><h4>Configurações</h4>></a>
-                </div>
+                    <div class="menuOpcao">
+                        <a href="#" target="_blank"><img src="imagens/icone_metricas.png" alt="icone">Métricas</a>
+                        <a href="#" target="_blank"><img src="imagens/icone_agendar.png" alt="icone">Agendar Publicação</a>
+                        <a href="#" target="_blank"><img src="imagens/icone_calendar.png" alt="icone">Calendário</a>
+                        <a href="#" target="_blank"><img src="imagens/icone_config.png" alt="icone">Configurações</a>
+                    </div>
+                    <!-- termina o nav -->
+            </div>
 
                 <div class="paginaConfiguracoes">
                     <form>
                         <label>Nome</label>
-                        <input type="text" id="nome">
+                        <input type="text" name="nome" id="nome">
                         <label>Rede Social</label>
-                        <input type="url" id="linkRede">
+                        <input type="url" name="linkRede" id="linkRede">
                         <label>Senha</label>
-                        <input type="password" id="senha">
+                        <input type="password" name="senha" id="senha">
                         <button type="submit">Cadastrar</button>
                     </form>
-                    <div id="contato">
+                    <div id="configContato">
                         <div class="contatoImagem">
                             <img src="./imagens/imagem_contato.png" alt="imagem de um atendente">
                             <p>Ficou com dúvida?</p>
@@ -53,7 +55,7 @@
                                     <p>Email: empresa@gmail.com</p>
                                     <p>Endereço: Rua da empresa perto - SP</p>
                                 </div>
-                                <div class="logoContatoSocial">
+                                <div class="logoRedes">
                                     <a href="https://www.facebook.com/" target="_blank"><img src="./imagens/insta.png" alt="logo instagram"></a>
                                     <a href="https://www.instagram.com/" target="_blank"><img src="./imagens/face.png" alt="logo facebook"></a>
                                 </div>
