@@ -423,9 +423,9 @@ footer p{
     text-align: center;
     align-items: center;
     opacity: 90%;
-    font-size: 22px;
-    overflow: hidden;
-    height: 100pc;
+    font-size: 22px;   
+    padding-bottom: 20px; 
+    justify-items: center;         
 }
 
 .iconeMidiaTools {
@@ -447,7 +447,7 @@ footer p{
 
 .menuLateral .perfil img {
     padding: 3rem 3rem 0 3rem;
-    max-width: 200px;
+    max-width: 150px;
 }
 
 .menuLateral .menuOpcao img {
@@ -466,7 +466,8 @@ footer p{
 .menuOpcao a {
     padding: 1rem 0.5rem;
     text-decoration: none;
-    color: white;
+    color: #11023C;
+    font-weight: bold;
 }
 
 .menuOpcao a:hover {
@@ -503,7 +504,7 @@ footer p{
 }
 
 .seletorParametros {
-    max-width: 100%;
+    max-width: 100%;    
 }
 
 .seletorMetricas {
@@ -530,7 +531,7 @@ footer p{
 .seletorMetricas label {
     text-decoration: none;
     font-size: 1rem;
-    color: white;
+    color: #11023C;
     font-family: 'Roboto', sans-serif;
     text-align: left;
     margin-top: 0.25rem;
@@ -541,6 +542,208 @@ footer p{
 }
 
 /* fim - estilos para dashboard*/
+
+
+/*estilos para calendario*/
+#dashCalendario{
+    display: flex;
+    flex-direction: row;     
+}
+
+#principal {
+    display: flex;
+    flex-direction: column;
+    background-color: #FBEDFF;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+#principal .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #FBEDFF;
+    padding: 0px;
+}
+
+#principal .menu button {
+    width: 250px;
+    color: #11023C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    padding: 10px;    
+    color: #11023C;
+    text-decoration: none;        
+}
+
+#principal .menu .menuesq {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #11023C;    
+}
+
+#principal .menu .menuesq select{
+    width: 100%;
+    height: 60px;
+    color:#11023C;
+}
+#principal .menu .menuesq input{
+    width: 100%;
+    height: 60px;
+    background-color: #AA60DC;    
+    margin-top: 10px;
+    border: none;
+    border-radius:30px;
+    color:#11023C;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;    
+}
+
+#principal .menu .menudir {
+    display: flex;
+    align-items: center;
+}
+
+#principal .menu button:hover {
+    background-color:  rgba(170, 96, 220, 0.7);
+}
+
+.logoprincipal{
+    background-color: #AA60DC;
+    padding: 30px;    
+    border-radius: 100%;
+}
+
+.calendario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+table {
+    border-radius: 12px;   
+    border-collapse:separate;   
+}
+
+table th {
+    border: 4px solid  #11023C;
+    background-color: #AA60DC;
+    width: 100px;
+    height:45px;
+    text-align: center;
+    padding: 5px;
+    opacity:80%;
+}
+
+table td {
+    border: 4px solid  #11023C;
+    width: 130px;
+    height:90px;
+    vertical-align: top;
+    text-align: right;
+    padding: 5px;
+
+}
+
+#principal .menuMobile{
+    display:none;       
+}
+
+#principal .botaoAgendar{
+    display: none;
+}
+
+.semanal{
+    display: none;
+}
+
+/*fim estilo caléndario*/
+
+/*inicio estilo configuracoes*/
+.configContainer {
+    display: flex;
+    height: 100vh;     
+}
+
+.paginaConfiguracoes{
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 100vh;
+}
+
+.paginaConfiguracoes form{
+    display: flex;
+    flex-direction: column;  
+    width: 90%;    
+}
+
+.paginaConfiguracoes form *{
+    font-size: 18px;
+    font-family: 'Righteous', cursive;
+    padding: 15px 0 10px;
+    color: #11023C;    
+}
+
+.paginaConfiguracoes form input {
+    background-color: #AA60DC;
+    line-height: 20px;
+    border: none;
+    border-radius:30px;
+    color:white;
+    font-size: 18px;    
+    text-indent: 25px;
+}
+
+.paginaConfiguracoes form button{
+    margin-top: 15px;
+    align-self: flex-end;
+    color: #11023C;
+}
+
+#configContato {
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+    height: 50vh;
+}
+
+#configContato .contatoImagem {
+    width: 50vw;
+    height: 50vh;
+    text-align: center;
+}
+
+#configContato .contatoMapa {
+    width: 50vw;
+    height: 50vh;
+}
+
+#configContato .contatoMapa iframe{
+    width: 50vw;
+    height: 20vh;
+    max-width: 950px;
+}
+
+#configContato .logoRedes{
+    margin-top: 2%;
+    display:flex;
+    width: 10%;
+    max-width: 220px;
+    justify-content: space-between;
+}
+
 
 @media only screen and (max-width: 900px) {
 /* Configuracoes formularios*/
@@ -752,16 +955,22 @@ footer{
     align-items: center;
 }
 
+.formulario select{
+    background-color: #D77389;
+    color:#11023C;    
+}
+
 .barraParametros {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
     padding-left: 2rem;
+    
 }
 
 .barraParametros label{
-    background-color: #AA60DC;
+    background-color: #D77389;
 }
 
 .seletorMetricas {
@@ -776,12 +985,13 @@ footer{
 .seletorMetricas label {
     text-decoration: none;
     font-size: 1rem;
-    color: white;
+    color: #11023C;
     font-family: 'Roboto', sans-serif;
     text-align: left;
     margin-top: 0.25rem;
-    background-color: #AA60DC;
+    background-color: #D77389;
     margin: 0px;
+    border-color: #D77389;
 }
 
 .dashboard .formulario input, .dashboard .formulario select, .dashboard .formulario .barraParametros h3{
@@ -803,9 +1013,176 @@ footer{
 
 .seletorMetricas .check {
     padding: 0.5rem;
+    background-color: #D77389;
 }
 
 /* fim - estilos para dashboard mobile*/
+
+/* inicio - estilos para calendario mobile*/
+
+.logoprincipal{
+    display: none;
+}
+
+.calendario{
+     display: none;
+ }
+
+.semanal{
+    display: block;
+    width: 100%;       
+}
+
+#dashCalendario{
+    display: flex;
+    height: 100%;
+    align-items: center;        
+}
+
+#principal{
+    width: 100%;
+}
+
+#principal .menu{
+    display: none;
+}
+
+#principal .menuMobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;       
+}
+#principal .menuMobile .datas{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;                 
+}
+
+#principal .menuMobile select{    
+    text-align: center;
+    color:#11023C;
+    width: 50%;
+    background-color: #D77389;
+}
+
+
+#principal .menuMobile input{
+    width: 100%;
+    height: 60px;
+    background-color: #D77389;    
+    margin-top: 10px;
+    border: none;
+    border-radius:30px;
+    color:#11023C;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;    
+}
+
+#principal .botaoAgendar{
+    display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
+
+#principal .botaoAgendar button{
+    width: 150px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #D77389;
+}
+
+
+#principal button {
+    width: 150px;
+    color: #11023C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    padding: 10px;        
+    text-decoration: none;     
+        
+}
+
+table{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+table th {
+    border: 4px solid  #11023C;
+    background-color: #D77389;
+    width: 130px;        
+    text-align: center;
+    padding: 5px;
+    opacity:80%;
+}
+
+table td {
+    border: 4px solid  #11023C;
+    width: 130px;
+    height:50px;
+    vertical-align: top;
+    text-align: right;
+    padding: 5px;
+
+}
+
+/* fim - estilos para calendário mobile*/
+
+/* inicio - estilos para configuracoes mobile*/
+.contatoImagem{
+    display: none;
+}
+.paginaConfiguracoes{
+    width: 100vh;
+    height: 100vw;
+}
+
+.configContainer {
+    display: flex;    
+    
+}
+
+.paginaConfiguracoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    
+}
+
+.paginaConfiguracoes form{
+    display: flex;
+    flex-direction: column;     
+    height: 100vh;    
+    width: 90%;      
+}
+
+
+.paginaConfiguracoes form label{
+    color: #11023C;
+    background-color: #FBEDFF;
+}
+.paginaConfiguracoes form input {
+    background-color: #D77389;    
+}
+
+.paginaConfiguracoes form button{
+    color: #11023C;
+    background-color: #D77389;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+#configContato .logoRedes{
+    align-self: center;
+    width: 100%;
+} 
+
 
 }
 
@@ -867,6 +1244,7 @@ footer{
     outline: none;
     cursor: pointer;
   }
+
 
   @media only screen and (max-width: 600px) {
 

@@ -3,119 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles_calendario.css" media="screen" />
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Midia Tools</title>
-  
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap" rel="stylesheet">    
+    <title>Calendário</title>  
 </head>
 <body>
-    <nav id="pagina" class="row">
-        <nav id="lateral" class="col-3">
-            <div>
-                <img src="imagens/Logo_Selecionado.png" class="logo">
-            </div>
-            <div class="usuario">
-                <img src="imagens/icone_usuario.png">
-            </div>
-            <div class="redes">
-                <button><img src="imagens/face.png"></button>
-                <button><img src="imagens/twitter.png"></button>
-                <button><img src="imagens/insta.png"></button>
-            </div>
-           
-            <button>
-                    <img src="imagens/icone_metricas.png">
-                    <h3>Métricas</h3> 
-            </button>           
-    
-            <button>
-                <img src="imagens/icone_agendar.png">
-                <h3>Agendar Publicação</h3> 
-            </button>   
-    
-            <button>
-                <img src="imagens/icone_calendar.png">
-                <h3>Calendário</h3> 
-            </button> 
-    
-            <button>
-                    <img src="imagens/icone_config.png">
-                    <h3>Configurações</h3> 
-            </button>           
-    
-        </nav>
-    
-        <main id="principal" class="col-9">
-            <div class="menu">
-                <div class="menuesq">
-                    <button>Selecionar rede social</button>
-                    <button>Mês/Ano</button>
+    <div id="dashCalendario">
+        <div class="iconeMidiaTools" onclick="toggleMenuLateral()">
+            <img src="./imagens/logo_home.png" alt="logo Mídia Tools">
+        </div>
+        <div class="menuLateral">
+            <!-- começa o nav -->
+                <div class="perfil">
+                    <img src="imagens/home_equipe.png" alt="Foto Perfil">
+                    <p>Nome do meu Perfil</p>
                 </div>
-                <div class="logoprincipal">
-                    <img src="imagens/insta.png">
+                <div class="logos">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="./imagens/insta.png" alt="logo instagram"></a>
+                    <a href="https://www.twittter.com/" target="_blank"><img src="./imagens/twitter.png" alt="logo twitter"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./imagens/face.png" alt="logo facebook"></a>
                 </div>
-                <div class="menudir">
-                    <button>Agendar</button>
+                <div class="menuOpcao">
+                    <a href="dashboard.html"><img src="imagens/icone_metricas.png" alt="icone">Métricas</a>
+                    <a href="agendar.html"><img src="imagens/icone_agendar.png" alt="icone">Agendar Publicação</a>
+                    <a href="calendario.html"><img src="imagens/icone_calendar.png" alt="icone">Calendário</a>
+                    <a href="configuracoes.html"><img src="imagens/icone_config.png" alt="icone">Configurações</a>
                 </div>
+                <!-- termina o nav -->
+        </div>
+    <main id="principal">
+        <div class="menu">
+            <div class="menuesq">
+                <select id="social" name="social">
+                    <option>Selecionar Rede Social</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="twitter">Twitter</option>
+                    <option value="instagram">Instagram</option>
+                </select>
+                <input type="month">
             </div>
-            <div class="calendario">
-                <table>
-                    <tr>
-                      <th>D</th>
-                      <th>S</th>
-                      <th>T</th>
-                      <th>Q</th>
-                      <th>Q</th>
-                      <th>S</th>
-                      <th>S</th>
-                    </tr>
-                    
-                    <tr>
-                      <td>1</td>
-                      <td>2</td>
-                      <td>3</td>
-                      <td>4</td>
-                      <td>5</td>
-                      <td>6</td>
-                      <td>7</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>9</td>
-                        <td>10</td>
-                        <td>11</td>
-                        <td>12</td>
-                        <td>13</td>
-                        <td>14</td>
-                    </tr>
-                    <tr>
-                        <td>15</td>
-                        <td>16</td>
-                        <td>17</td>
-                        <td>18</td>
-                        <td>19</td>
-                        <td>20</td>
-                        <td>21</td>
-                    </tr>
-                    <tr>
-                        <td>22</td>
-                        <td>23</td>
-                        <td>24</td>
-                        <td>25</td>
-                        <td>26</td>
-                        <td>27</td>
-                        <td>28</td>
-                    </tr>
-                    <tr>
-                        <td>29</td>
-                        <td>30</td>
-                    </tr>
-                  </table> 
+            <div class="logoprincipal">
+                <img src="imagens/insta.png">
             </div>
-        </main>
-    </nav>
-    
-
+            <div class="menudir">
+                <button>Agendar</button>
+            </div>                        
+        </div>
+        <div class="menuMobile">
+            <select id="social" name="social">
+                <option>Selecionar Rede Social</option>
+                <option value="facebook">Facebook</option>
+                <option value="twitter">Twitter</option>
+                <option value="instagram">Instagram</option>
+            </select> 
+            <div class="datas">                       
+            <input type="text" placeholder="Data Início" onfocus="(this.type='date')" onblur="(this.type='text')">        
+            <input type="text" placeholder="Data Fim" onfocus="(this.type='date')"  onblur="(this.type='text')">
+            </div>                  
+                
+            
+        </div>       
+        <div class="calendario">
+            <table>
+                <tr>
+                  <th>D</th>
+                  <th>S</th>
+                  <th>T</th>
+                  <th>Q</th>
+                  <th>Q</th>
+                  <th>S</th>
+                  <th>S</th>
+                </tr>
+                
+                <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                    <td>13</td>
+                    <td>14</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>16</td>
+                    <td>17</td>
+                    <td>18</td>
+                    <td>19</td>
+                    <td>20</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>23</td>
+                    <td>24</td>
+                    <td>25</td>
+                    <td>26</td>
+                    <td>27</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>29</td>
+                    <td>30</td>
+                </tr>
+              </table> 
+        </div>
+        <div class="semanal">
+            <table>              
+                <tr>
+                    <th>S</th>
+                    <td>1</td>
+                    <td>8</td>                    
+                </tr>
+                <tr>
+                    <th>T</th>
+                    <td>2</td>
+                    <td>9</td>                    
+                </tr>
+                <tr>
+                    <th>Q</th>
+                    <td>3</td>
+                    <td>10</td>                    
+                </tr>
+                <tr>
+                    <th>Q</th>
+                    <td>4</td>
+                    <td>11</td>                    
+                </tr>
+                <tr>
+                    <th>S</th>
+                    <td>5</td>
+                    <td>12</td>                    
+                </tr>
+                <tr>
+                    <th>S</th>
+                    <td>6</td>
+                    <td>13</td>                    
+                </tr>
+                <tr>
+                    <th>D</th>
+                    <td>7</td>
+                    <td>14</td>                    
+                </tr>
+             </table>
+             <div class="botaoAgendar">
+                <button>Agendar</button>
+            </div>
+    </main>
+    </div>
 </body>
 </html>

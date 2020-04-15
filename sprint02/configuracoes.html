@@ -4,13 +4,16 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="stylesheet.css" media="screen" />
-        <link rel="stylesheet" type="text/css" href="configstylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
         <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap" rel="stylesheet">
-        <title>Document</title>
+        <title>Configuracoes</title>
     </head>
 
     <body>
         <div class="configContainer">
+            <div class="iconeMidiaTools" onclick="toggleMenuLateral()">
+                <img src="./imagens/logo_home.png" alt="logo Mídia Tools">
+            </div>
             <div class="menuLateral">
                 <!-- começa o nav -->
                     <div class="perfil">
@@ -23,10 +26,10 @@
                         <a href="https://www.instagram.com/" target="_blank"><img src="./imagens/face.png" alt="logo facebook"></a>
                     </div>
                     <div class="menuOpcao">
-                        <a href="#" target="_blank"><img src="imagens/icone_metricas.png" alt="icone">Métricas</a>
-                        <a href="#" target="_blank"><img src="imagens/icone_agendar.png" alt="icone">Agendar Publicação</a>
-                        <a href="#" target="_blank"><img src="imagens/icone_calendar.png" alt="icone">Calendário</a>
-                        <a href="#" target="_blank"><img src="imagens/icone_config.png" alt="icone">Configurações</a>
+                        <a href="dashboard.html" target="_blank"><img src="imagens/icone_metricas.png" alt="icone">Métricas</a>
+                        <a href="agendar.html" target="_blank"><img src="imagens/icone_agendar.png" alt="icone">Agendar Publicação</a>
+                        <a href="calendario.html" target="_blank"><img src="imagens/icone_calendar.png" alt="icone">Calendário</a>
+                        <a href="configuracoes.html" target="_blank"><img src="imagens/icone_config.png" alt="icone">Configurações</a>
                     </div>
                     <!-- termina o nav -->
             </div>
@@ -39,7 +42,7 @@
                         <input type="url" name="linkRede" id="linkRede">
                         <label>Senha</label>
                         <input type="password" name="senha" id="senha">
-                        <button type="submit">Cadastrar</button>
+                        <button type="submit">Confirmar</button>
                     </form>
                     <div id="configContato">
                         <div class="contatoImagem">
@@ -48,7 +51,7 @@
                             <p>entre em contato com a gente.</p>
                         </div>
                         <div class="contatoMapa">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0479761312095!2d-46.677530585386876!3d-23.60261228466244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50ab7feb4519%3A0x739f0ddb0439cf94!2sDigital%20House%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1585709702920!5m2!1spt-BR!2sbr" width=60% height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.0479761312095!2d-46.677530585386876!3d-23.60261228466244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50ab7feb4519%3A0x739f0ddb0439cf94!2sDigital%20House%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1585709702920!5m2!1spt-BR!2sbr" width=30% height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                             <div class="informacoesContato">
                                 <div class="contato">
                                     <p>Telefone: (11) 29193821-321312</p>
