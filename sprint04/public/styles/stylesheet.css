@@ -1,0 +1,1293 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAE1E1;
+    height: 100vh;
+    width: 100vw;            
+}
+
+h1{
+    font-size: 36px;
+    font-family: 'Righteous', cursive;
+    color: #AD4B61;
+    align-self: flex-start;
+}
+
+h2 {
+    font-size: 32px;
+    font-family: 'Righteous', cursive;
+    color: #AD4B61;
+    align-self: flex-start;
+}
+
+h3 { 
+    font-size:24px;
+    color: #AD4B61;
+}
+
+p{
+    font-size:18px;
+    color:#534145;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+#navHome {
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    height: 70px;
+    background-color: #AA60DC;
+    opacity: 90%;
+    font-size: 22px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+
+.ancoraTitulo{
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin-right:30%;
+}
+
+#navHome a{
+    text-decoration: none;
+    color: white;
+}
+
+#navHome a:hover{
+    color:#FFACBE;
+    font-weight: bold;
+}
+
+#navHome .active{
+    color:#FFACBE;
+    font-weight: bold;
+}
+
+header{
+    height: 70px;
+    background-color: #AA60DC;
+    opacity: 90%;
+    font-size: 22px; 
+    display: flex; 
+    overflow: hidden;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    z-index: 200;    
+}
+
+header .logo-content {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 10px;
+  }
+
+header .logo-content img {
+    width: 70px;
+  }
+  
+nav {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color:#FFACBE;
+    font-weight: bold;
+}
+
+.active{
+    color:#FFACBE;
+    font-weight: bold;
+}
+
+button{
+    background-color: #AA60DC;
+    height: 60px;
+    width: 280px;
+    border: none;
+    border-radius:30px;
+    color:white;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+
+button:hover{
+    background: white;
+    color: #FFACBE;
+    cursor: pointer;
+}
+
+#homeIntroducao{
+    margin-top:110px;
+    display:flex;
+}
+
+.logo{
+    text-align: center;
+    margin-left:3%;
+    margin-right:4%;
+}
+
+.introducao{
+    margin-top:3%;
+    max-width: 65%;
+}
+
+#homeEspacamento{
+    background-image: url("../imagens/background_home.png");
+    height: 350px;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-top:2%;
+    margin-bottom: 4%;
+}
+
+#homeEspacamento h2{
+    max-width: 750px;
+    margin-left: 26%;
+    margin-top: 6%
+}
+
+#homeEspacamento button{
+    margin-top: 2%
+}
+
+#homeServicos{
+    width: 100%;
+    margin-bottom:3%;
+}
+
+#homeServicos h2{
+    margin-left: 3%;
+}
+
+.bloquinhos{
+    text-align: center;
+}
+
+.bloquinhos p{
+    max-width: 70%;
+    text-align: center;
+    margin-left:12%;
+}
+
+#homeServicos .homeServicosOpcoes{
+    display:flex;
+}
+
+#homeContato{
+    display:flex;
+    margin-left:3%;
+}
+
+.contatinho{
+    margin-left:3%;
+}
+
+#homeContato iframe{
+    width: 950px;
+    height: 305px;
+    margin-top:5%;
+}
+
+.informacoesContato{
+    display:flex;
+    justify-content: space-between;
+    margin-top:1%;
+}
+
+.logoRedes{
+    margin-top: 2%;
+    display:flex;
+    width: 220px;
+    justify-content: space-between;
+}
+
+.homeContatoMapa{
+    margin-top:1%;
+    margin-left:3%;
+}
+
+.homeContatoImagem{
+    text-align: center;
+}
+
+/* Configuracoes formularios*/
+/* Botão Google */
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;       
+}
+
+#logoLoginCadastro{
+    display:none;
+}
+
+.google-btn {
+    width: 210px;
+    height: 42px;
+    background-color: #4285f4;
+    border-radius: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,.25);
+}
+.google-icon-wrapper {
+      position: absolute;
+      margin-top: 1px;
+      margin-left: 1px;
+      width: 40px;
+      height: 40px;
+      border-radius: 2px;
+      background-color: #fff;
+}
+.google-icon {
+      position: absolute;
+      margin-top: 11px;
+      margin-left: 11px;
+      width: 18px;
+      height: 18px;
+}
+.btn-text {
+      float: right;
+      margin: 11px 11px 0 0;
+      color: #fff;
+      font-size: 14px;
+      letter-spacing: 0.2px;
+      font-family: "Roboto";
+}
+.google-btn:hover {
+      box-shadow: 0 0 6px #4285f4;
+}
+.google-btn:active {
+      background: #1669F2;
+}
+
+.loginCadastro {    
+    display: flex;      
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;                  
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;      
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px; 
+    margin-right: 50px;
+}
+
+.formulario h3{
+    text-align: center;
+    margin: 10px;
+}
+
+.formulario form{   
+    display: flex;
+    flex-direction: column;    
+}
+
+.formulario a{
+    text-decoration: none;
+    font-size:18px;
+    color:#534145;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.formulario input, select{
+    background-color: #AA60DC;
+    height: 40px;
+    width: 450px;
+    border: none;
+    border-radius:30px;
+    color:white;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center; 
+    margin-top: 10px;
+    margin-bottom: 5px;    
+}
+
+::-webkit-input-placeholder {
+	color: white;
+}
+
+.formulario button {
+    align-self: center;
+    background-color: #AA60DC;
+    height: 40px;
+    width: 200px;
+    margin-top: 10px;
+    border: none;
+    border-radius:30px;
+    color:white;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.logos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+}
+
+.logos a{
+    margin: 0;
+}
+
+.logos a img{
+    width: 50px;    
+}
+
+.logos a img:hover{
+    box-shadow: 0 0 6px #4285f4;    
+}
+
+
+#ilustracaoLogin img{
+    width: 330px;    
+    margin-top: 80px;
+}
+
+#ilustracaoCadastro img{
+    width: 450px;    
+}
+
+/* Acaba formulário */
+
+
+footer{
+    height: 60px;
+    width: 100%;
+    max-width: 100vw;    
+    text-align: center;
+    background-color: black;
+    margin-top:3%; 
+    display: flex;     
+    justify-content: center;
+    align-content: center;
+}
+
+footer p{
+    color:white;      
+}
+
+/* inicio - estilos para dashboard*/
+
+.dashContainer {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.menuLateral {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    background-color: #AA60DC;
+    text-align: center;
+    align-items: center;
+    opacity: 90%;
+    font-size: 22px;   
+    padding-bottom: 20px; 
+    justify-items: center;         
+}
+
+.iconeMidiaTools {
+    position: fixed;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.iconeMidiaTools img {
+    width: 75px;
+}
+
+.menuLateral .logos a {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.menuLateral .perfil img {
+    padding: 3rem 3rem 0 3rem;
+    max-width: 150px;
+}
+
+.menuLateral .menuOpcao img {
+    max-width: 30px;
+    padding: 0 1rem;
+}
+
+.menuOpcao {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.menuOpcao a {
+    padding: 1rem 0.5rem;
+    text-decoration: none;
+    color: #11023C;
+    font-weight: bold;
+}
+
+.menuOpcao a:hover {
+    background-color: white;
+    color: #AA60DC;
+}
+
+.dashboard {
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+}
+.dashboard form, .dashboard .formulario {
+    margin-top: 10px; 
+    margin-right: 0px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.dashboard .formulario input, .dashboard .formulario select, .dashboard .formulario .barraParametros h3{
+    height: 2rem;
+    width: 200px;
+    font-size: 1.25rem;
+    margin: 0.25rem;
+}
+
+.barraParametros {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.seletorParametros {
+    max-width: 100%;    
+}
+
+.seletorMetricas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.seletorMetricas .check {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #AA60DC;
+    border-radius: 1rem;
+}
+
+.seletorMetricas input[type="checkbox"] {
+    height: 1rem;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+.seletorMetricas label {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #11023C;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin-top: 0.25rem;
+}
+
+.grafico {
+    margin: 2rem auto;
+}
+
+/* fim - estilos para dashboard*/
+
+
+/*estilos para calendario*/
+#dashCalendario{
+    display: flex;
+    flex-direction: row;     
+}
+
+#principal {
+    display: flex;
+    flex-direction: column;
+    background-color: #FBEDFF;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+}
+
+#principal .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #FBEDFF;
+    padding: 0px;
+}
+
+#principal .menu button {
+    width: 250px;
+    color: #11023C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    padding: 10px;    
+    color: #11023C;
+    text-decoration: none;        
+}
+
+#principal .menu .menuesq {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #11023C;    
+}
+
+#principal .menu .menuesq select{
+    width: 100%;
+    height: 60px;
+    color:#11023C;
+}
+#principal .menu .menuesq input{
+    width: 100%;
+    height: 60px;
+    background-color: #AA60DC;    
+    margin-top: 10px;
+    border: none;
+    border-radius:30px;
+    color:#11023C;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;    
+}
+
+#principal .menu .menudir {
+    display: flex;
+    align-items: center;
+}
+
+#principal .menu button:hover {
+    background-color:  rgba(170, 96, 220, 0.7);
+}
+
+.logoprincipal{
+    background-color: #AA60DC;
+    padding: 30px;    
+    border-radius: 100%;
+}
+
+.calendario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+table {
+    border-radius: 12px;   
+    border-collapse:separate;   
+}
+
+table th {
+    border: 4px solid  #11023C;
+    background-color: #AA60DC;
+    width: 100px;
+    height:45px;
+    text-align: center;
+    padding: 5px;
+    opacity:80%;
+}
+
+table td {
+    border: 4px solid  #11023C;
+    width: 130px;
+    height:90px;
+    vertical-align: top;
+    text-align: right;
+    padding: 5px;
+
+}
+
+#principal .menuMobile{
+    display:none;       
+}
+
+#principal .botaoAgendar{
+    display: none;
+}
+
+.semanal{
+    display: none;
+}
+
+/*fim estilo caléndario*/
+
+/*inicio estilo configuracoes*/
+.configContainer {
+    display: flex;
+    height: 100vh;     
+}
+
+.paginaConfiguracoes{
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 100vh;
+}
+
+.paginaConfiguracoes form{
+    display: flex;
+    flex-direction: column;  
+    width: 90%;    
+}
+
+.paginaConfiguracoes form *{
+    font-size: 18px;
+    font-family: 'Righteous', cursive;
+    padding: 15px 0 10px;
+    color: #11023C;    
+}
+
+.paginaConfiguracoes form input {
+    background-color: #AA60DC;
+    line-height: 20px;
+    border: none;
+    border-radius:30px;
+    color:white;
+    font-size: 18px;    
+    text-indent: 25px;
+}
+
+.paginaConfiguracoes form button{
+    margin-top: 15px;
+    align-self: flex-end;
+    color: #11023C;
+}
+
+#configContato {
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+    height: 50vh;
+}
+
+#configContato .contatoImagem {
+    width: 50vw;
+    height: 50vh;
+    text-align: center;
+}
+
+#configContato .contatoMapa {
+    width: 50vw;
+    height: 50vh;
+}
+
+#configContato .contatoMapa iframe{
+    width: 50vw;
+    height: 20vh;
+    max-width: 950px;
+}
+
+#configContato .logoRedes{
+    margin-top: 2%;
+    display:flex;
+    width: 10%;
+    max-width: 220px;
+    justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 900px) {
+/* Configuracoes formularios*/
+/* Botão Google */
+header{
+    display:none;
+    margin: 0;
+    padding: 0;
+}
+
+#navHome{
+    display:flex;
+    justify-content: space-around;
+}
+
+.ancoraTitulo{
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-right:0%;
+}
+
+#homeIntroducao{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#homeEspacamento{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#homeEspacamento h2{
+    font-size:26px;
+    max-width: 90%;
+    margin:0 auto;
+    margin-top:25%;
+    margin-bottom:5%;
+}
+
+#homeServicos .homeServicosOpcoes{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#homeContato{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contatinho{
+    margin-left:0%;
+}
+
+#homeContato iframe{
+    width: 100%;
+    height: 300px;
+    margin:0 auto;
+    margin-top:5%;
+}
+
+.informacoesContato{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contatinho{
+    margin-left:5%;
+}
+
+body {     
+    background-color: #FBEDFF;    
+}
+
+h1{   
+    color: #11023C;    
+}
+
+h2 {    
+    color: #11023C;    
+}
+
+h3 {    
+    color: #11023C;
+}
+
+
+#logoLoginCadastro{
+    display: block;
+    width: 114px;
+    margin-bottom: 20px;
+}
+
+.loginCadastro {   
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;    
+}
+
+.formulario{       
+    width: 100%;
+    margin-top: 2px; 
+    margin-right: 0;            
+}
+
+.formulario h3{    
+    margin: 10px;
+}
+
+.formulario form{    
+    width: 100%;            
+}
+
+.formulario input, label{
+    background-color: #D77389;
+    height: 35px;
+    width: 300px;    
+    color:#11023C;
+    font-size: 22px;    
+    align-self: center; 
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 80%;              
+}
+
+::-webkit-input-placeholder {
+	color: #11023C;
+}
+
+.formulario button {    
+    background-color: #D77389;
+    height: 35px;
+    width: 200px;
+    margin-top: 10px;   
+    color:#11023C;
+    font-size: 22px;    
+}
+
+.formulario button:hover{    
+    color: #FFACBE;    
+}
+
+.logos {
+    display: flex;
+    justify-content: center;        
+}
+
+.logos a{
+    margin-right: 20px;
+    margin-left: 20px;    
+}
+
+.logos a img{    
+    width: 40px;    
+}
+
+#ilustracaoLogin img{
+    display:none;
+}
+
+#ilustracaoCadastro img{
+    display: none;
+}
+
+#logoLoginCadastro{
+    width: 114px;
+    margin-bottom: 20px;
+}
+
+#pergunta{
+    margin-bottom: 20px;
+}
+/* Acaba formulário */
+
+footer{
+    display: none;
+}
+
+/* inicio - estilos para dashboard mobile*/
+
+.menuLateral {
+    display: none;
+    width: 70%;
+}
+
+.dashboard {
+    margin-top: 10px;
+    width: 100pc;
+}
+
+.dashboard .formulario form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.formulario select{
+    background-color: #D77389;
+    color:#11023C;    
+}
+
+.barraParametros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding-left: 2rem;
+    
+}
+
+.barraParametros label{
+    background-color: #D77389;
+}
+
+.seletorMetricas {
+    width: 50%;
+    padding-right: 2rem;
+}
+
+.seletorMetricas h3 {
+    font-size: 1rem;
+}
+
+.seletorMetricas label {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #11023C;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    margin-top: 0.25rem;
+    background-color: #D77389;
+    margin: 0px;
+    border-color: #D77389;
+}
+
+.dashboard .formulario input, .dashboard .formulario select, .dashboard .formulario .barraParametros h3{
+    height: 1.25rem;
+    width: 150px;
+    font-size: 1rem;
+    margin: 0.25rem;
+    
+}
+
+.dashboard .formulario .seletorMetricas input {
+    width: auto;
+    height: 1rem;
+}
+
+.dashboard .formulario .seletorMetricas label {
+    width: 100%;
+}
+
+.seletorMetricas .check {
+    padding: 0.5rem;
+    background-color: #D77389;
+}
+
+/* fim - estilos para dashboard mobile*/
+
+/* inicio - estilos para calendario mobile*/
+
+.logoprincipal{
+    display: none;
+}
+
+.calendario{
+     display: none;
+ }
+
+.semanal{
+    display: block;
+    width: 100%;       
+}
+
+#dashCalendario{
+    display: flex;
+    height: 100%;
+    align-items: center;        
+}
+
+#principal{
+    width: 100%;
+}
+
+#principal .menu{
+    display: none;
+}
+
+#principal .menuMobile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;       
+}
+#principal .menuMobile .datas{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;                 
+}
+
+#principal .menuMobile select{    
+    text-align: center;
+    color:#11023C;
+    width: 50%;
+    background-color: #D77389;
+}
+
+
+#principal .menuMobile input{
+    width: 100%;
+    height: 60px;
+    background-color: #D77389;    
+    margin-top: 10px;
+    border: none;
+    border-radius:30px;
+    color:#11023C;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;    
+}
+
+#principal .botaoAgendar{
+    display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
+
+#principal .botaoAgendar button{
+    width: 150px;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: #D77389;
+}
+
+
+#principal button {
+    width: 150px;
+    color: #11023C;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    padding: 10px;        
+    text-decoration: none;     
+        
+}
+
+table{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+table th {
+    border: 4px solid  #11023C;
+    background-color: #D77389;
+    width: 130px;        
+    text-align: center;
+    padding: 5px;
+    opacity:80%;
+}
+
+table td {
+    border: 4px solid  #11023C;
+    width: 130px;
+    height:50px;
+    vertical-align: top;
+    text-align: right;
+    padding: 5px;
+
+}
+
+/* fim - estilos para calendário mobile*/
+
+/* inicio - estilos para configuracoes mobile*/
+.contatoImagem{
+    display: none;
+}
+.paginaConfiguracoes{
+    width: 100vh;
+    height: 100vw;
+}
+
+.configContainer {
+    display: flex;    
+    
+}
+
+.paginaConfiguracoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    
+}
+
+.paginaConfiguracoes form{
+    display: flex;
+    flex-direction: column;     
+    height: 100vh;    
+    width: 90%;      
+}
+
+
+.paginaConfiguracoes form label{
+    color: #11023C;
+    background-color: #FBEDFF;
+}
+.paginaConfiguracoes form input {
+    background-color: #D77389;    
+}
+
+.paginaConfiguracoes form button{
+    color: #11023C;
+    background-color: #D77389;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+#configContato .logoRedes{
+    align-self: center;
+    width: 100%;
+} 
+
+
+}
+
+#agendar{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#agendar input{
+    align-self: center;
+    margin-top:2%;
+    width: 50%;
+    padding: 0.4%;
+    outline: none;
+}
+
+#agendar label{
+    margin-top:4%;
+    font-size: 22px;
+    font-family: 'Righteous', cursive;
+    color: #AD4B61;
+    cursor: pointer;
+}
+
+#agendar select{
+    margin-top:2%;
+    align-self: center;
+    width: 50%;
+    height: 10%;
+    padding: 0.6%;
+}
+
+#agendar button{
+    margin-top:8%;
+    align-self: center;
+    width: 25%;
+}
+
+#agendar input[type="datetime-local"] {
+    appearance: none;
+    -webkit-appearance: none;   
+    display: inline-block;
+    visibility: visible;
+}
+
+#agendar input[type="datetime-local"], focus {
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+#agendar input[type="file"]::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  #agendar input[type="file"]::before {
+    outline: none;
+    cursor: pointer;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+
+    #agendar input[type="file"]{
+        text-align: center;
+        font-size: 12px;
+        align-self: center;
+        color:white;
+      }
+
+    #agendar input{
+        font-size:16px;
+        width: 80%;
+    }
+    #agendar section{
+        font-size:16px;
+        margin-top:8%;
+        width: 80%;
+    }
+    #agendar input[type="datetime-local"]{
+        color:white;
+        font-size:16px;
+        text-align: center;
+        width: 80%;
+    }
+    #agendar label{
+        margin-top:8%;
+        font-size: 20px;
+        font-family: 'Righteous', cursive;
+        color: #AD4B61;
+        cursor: pointer;
+        width: 80%;
+    }
+    #agendar button{
+        margin-top:16%;
+        font-size: 20px;
+        width: 80%;
+        font-family: 'Righteous', cursive;
+        color: white;
+        cursor: pointer;
+    }
+    #agendar button:hover{
+        color: #AD4B61;
+        cursor: pointer;
+    }
+  }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="/styles/stylesheet.css" media="screen" />
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo-content">
+            <a href="/"><img src="./imagens/logo_home.png" alt="logo" class="logo_nav"></a>
+        </div>
+    <nav>           
+            <a href="login" class="active">Login</a>
+            <a href="cadastro">Cadastre-se</a>          
+    </nav>
+    </header>
+    <div class="container">
+    <main class = "loginCadastro">
+        <img src="./imagens/logo_home.png" alt="logo" id="logoLoginCadastro">
+        <div id="ilustracaoLogin">
+            <img src="./imagens/login.svg" alt="imagem login">
+        </div> 
+        <div class="formulario">
+            <h3>Acesse sua conta</h3>
+            <div class="google-btn">
+                <div class="google-icon-wrapper">
+                  <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+                </div>
+                <p class="btn-text"><b>Acessar com o Google</b></p>
+              </div>
+              <h3>ou</h3>
+              <form method="get" action="/dashboard">
+                  <input type="email" name="email" id="email" placeholder="email">
+                  <input type="password" name="senha" id="senha" placeholder="senha">
+                  <button type="submit" onclick="window.location.href='/dashboard'">entrar</button>
+                  <a href="cadastro">Ainda não tem cadastro?</a>                
+              </form>
+        </div>       
+    </main>
+    
+    <footer>
+        <p>Todos direitos reservados para mídia tools</p>
+    </footer>
+    </div>
+</body>
+</html>
