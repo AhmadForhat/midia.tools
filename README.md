@@ -10,7 +10,7 @@ Tem como objetivo utilizar o layout feito no primeiro sprint como base e criar u
 Tem como objetivo a construção do "layout do banco de dados" o qual foi feito a DER do projeto utilizando MYSQL
 ## Quarto Sprint
 ### Objetivo
-> Tem como objetivo estruturar o banco de dados e todo backend da aplicação.
+Tem como objetivo estruturar o banco de dados e todo backend da aplicação.
 ### Iniciando
 1. Para iniciar, basta baixar o projeto com comando:
 
