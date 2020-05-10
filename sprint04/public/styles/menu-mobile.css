@@ -1,0 +1,9 @@
+[data-menu = "button"] {
+    display:none;
+}
+
+@media (max-width: 900px) {
+    [data-menu = "button"] {
+        display:block;
+    }
+}

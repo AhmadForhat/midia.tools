@@ -1,0 +1,41 @@
+/* Destinado para padrões basicos, como h1, p, h2, body, button entre outros */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #EAE1E1;
+    height: 100vh;
+    width: 100vw;            
+}
+
+h1{
+    font-size: 36px;
+    font-family: 'Righteous', cursive;
+    color: #AD4B61;
+    align-self: flex-start;
+}
+
+h2 {
+    font-size: 32px;
+    font-family: 'Righteous', cursive;
+    color: #AD4B61;
+    align-self: flex-start;
+}
+
+h3 { 
+    font-size:24px;
+    color: #AD4B61;
+}
+
+p{
+    font-size:18px;
+    color:#534145;
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}

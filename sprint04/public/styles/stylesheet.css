@@ -1,79 +1,13 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
-    background-color: #EAE1E1;
-    height: 100vh;
-    width: 100vw;            
-}
-
-h1{
-    font-size: 36px;
-    font-family: 'Righteous', cursive;
-    color: #AD4B61;
-    align-self: flex-start;
-}
-
-h2 {
-    font-size: 32px;
-    font-family: 'Righteous', cursive;
-    color: #AD4B61;
-    align-self: flex-start;
-}
-
-h3 { 
-    font-size:24px;
-    color: #AD4B61;
-}
-
-p{
-    font-size:18px;
-    color:#534145;
-    font-family: 'Roboto', sans-serif;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-#navHome {
-    display:flex;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
-    height: 70px;
-    background-color: #AA60DC;
-    opacity: 90%;
-    font-size: 22px;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 200;
-}
-
+@import 'basic.css';
+@import 'menu-mobile.css';
+@import './home/nav-home.css';
+@import './home/nav-home.css';
 
 .ancoraTitulo{
     font-size: 32px;
     font-weight: bold;
     color: white;
     margin-right:30%;
-}
-
-#navHome a{
-    text-decoration: none;
-    color: white;
-}
-
-#navHome a:hover{
-    color:#FFACBE;
-    font-weight: bold;
-}
-
-#navHome .active{
-    color:#FFACBE;
-    font-weight: bold;
 }
 
 header{
@@ -754,11 +688,6 @@ header{
     padding: 0;
 }
 
-#navHome{
-    display:flex;
-    justify-content: space-around;
-}
-
 .ancoraTitulo{
     font-size: 28px;
     font-weight: bold;
@@ -938,11 +867,6 @@ footer{
 }
 
 /* inicio - estilos para dashboard mobile*/
-
-.menuLateral {
-    display: none;
-    width: 70%;
-}
 
 .dashboard {
     margin-top: 10px;
@@ -1290,4 +1214,8 @@ table td {
         color: #AD4B61;
         cursor: pointer;
     }
+  }
+
+  nav button{
+      background-color:black;
   }

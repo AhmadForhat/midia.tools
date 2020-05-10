@@ -1,0 +1,30 @@
+#navHome {
+    display:flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    height: 70px;
+    background-color: #AA60DC;
+    opacity: 90%;
+    font-size: 22px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 200;
+}
+
+#navHome a{
+    text-decoration: none;
+    color: white;
+}
+
+#navHome a:hover{
+    color:#FFACBE;
+    font-weight: bold;
+}
+
+#navHome .active{
+    color:#FFACBE;
+    font-weight: bold;
+}
