@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" type="text/css" href="/styles/stylesheet.css" media="screen" />
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap" rel="stylesheet">
-    <script type="text/javascript" src="/script.js" defer></script>
-</head>
-<body>
+<%- include('components/headers') %>
     <nav id="navHome">
-            <a href="#" class="ancoraTitulo active">Bem Vindo</a>
+            <a href="/" class="ancoraTitulo active">Bem Vindo</a>
             <a href="login">Login</a>
             <a href="cadastro">Cadastre-se</a>
     </nav>    
@@ -73,7 +63,4 @@
             </div>
         </div>
     </div>
-    <footer>
-        <p>Todos direitos reservados para mídia tools</p></footer>
-</body>
-</html>
+    <%- include('components/footer') %>
