@@ -2,11 +2,12 @@
     <button data-menu="button" aria-expanded="false" aria-controls="menuLateral">Menu</button>
     <div data-menu="list" id="menuList">
         <div class="iconeMidiaTools">
-            <img src="./imagens/logo_home.png" alt="logo Mídia Tools">  
+            <img src="./imagens/logo_home.png" alt="logo Mídia Tools">
+            <a href="/sair" id="sair">SAIR</a>  
         </div>
         <div class="perfil">
             <img src="imagens/home_equipe.png" alt="Foto Perfil">
-            <p>Nome do meu Perfil</p>
+            <p><%= user.name %></p>
         </div>
         <div class="logos">
             <a href="https://www.facebook.com/" target="_blank"><img src="./imagens/insta.png" alt="logo instagram"></a>
@@ -14,10 +15,10 @@
             <a href="https://www.instagram.com/" target="_blank"><img src="./imagens/face.png" alt="logo facebook"></a>
         </div>
         <div class="menuOpcao">
-            <a href="dashboard"><img src="imagens/icone_metricas.png" alt="icone">Métricas</a>
-            <a href="agendar"><img src="imagens/icone_agendar.png" alt="icone">Agendar Publicação</a>
-            <a href="calendario"><img src="imagens/icone_calendar.png" alt="icone">Calendário</a>
-            <a href="configuracoes"><img src="imagens/icone_config.png" alt="icone">Configurações</a>
+            <a href="/dashboard"><img src="imagens/icone_metricas.png" alt="icone">Métricas</a>
+            <a href="/agendar"><img src="imagens/icone_agendar.png" alt="icone">Agendar Publicação</a>
+            <a href="/calendario"><img src="imagens/icone_calendar.png" alt="icone">Calendário</a>
+            <a href="/configuracoes"><img src="imagens/icone_config.png" alt="icone">Configurações</a>
         </div>
     </div>
 </nav>

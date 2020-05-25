@@ -2,12 +2,13 @@
         <div class="configContainer">
             <div class="iconeMidiaTools" onclick="toggleMenuLateral()">
                 <img src="./imagens/logo_home.png" alt="logo Mídia Tools">
+                <a href="/sair" id="sair">SAIR</a> 
             </div>
             <div class="menuLateral">
                 <!-- começa o nav -->
                     <div class="perfil">
                         <img src="imagens/home_equipe.png" alt="Foto Perfil">
-                        <p>Nome do meu Perfil</p>
+                        <p><%= user.name %></p>
                     </div>
                     <div class="logos">
                         <a href="https://www.facebook.com/" target="_blank"><img src="./imagens/insta.png" alt="logo instagram"></a>

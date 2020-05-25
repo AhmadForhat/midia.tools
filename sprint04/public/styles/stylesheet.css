@@ -324,6 +324,9 @@ button:hover{
 
 /* Acaba formulário */
 
+#sair{
+    margin-left: 200px; 
+}
 
 footer{
     height: 60px;
